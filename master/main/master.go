@@ -1,5 +1,7 @@
 package main
 
+
+
 import (
 	"crontab/master"
 	"flag"
@@ -7,6 +9,13 @@ import (
 	"runtime"
 	"time"
 )
+
+/*
+实现的功能:
+	1.实现可配置化，命令实现配置文件加载
+	2.给web后台提供http API,用于管理定时任务
+	TODO: 实现web后台的前端页面
+ */
 
 var (
 	confFile string // 配置文件路径
